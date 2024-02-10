@@ -1,9 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Slabo+27px&family=Workbench:SCAN@25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Workbench:SCAN@25&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: blue;
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    height:100vh;
 }
+.brandimgdiv{
+    grid-row:span 2 ;
+    background-color: #2D3250;
+}
+.brandimg{
+    height: 100vh;
+    transition: all 1s ease-out;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top:70px;
+    gap:10px;
+    list-style-type: none;
+}
+.brandnamediv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+.brandname{
+    font-family: "Slabo 27px", serif;
+    font-size: 4rem;
+
+}
+.motto{
+    font-family: "Dancing Script", cursive; 
+  
+}
+
